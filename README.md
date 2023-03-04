@@ -1,3 +1,71 @@
+Git clone this repository.
+setup the new llama environment using:
+
+```
+conda env create -f llama.yml
+```
+
+once the environment is installed. use the following command to activate 
+
+```
+conda activate llama
+```
+
+or if you installed the environment or not sure with the name use the following command to check the available environments:
+
+```
+conda env list
+```
+
+to exit the environment use the following command:
+
+```
+conda deactivate
+```
+
+use the following command to run the example.py
+
+```
+torchrun --nproc_per_node 1 example.py --ckpt_dir /raid/mpsych/llama/weights/7B/7B/ --tokenizer_path /raid/mpsych/llama/weights/7B/tokenizer.model
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # LLaMA 
 
 This repository is intended as a minimal, hackable and readable example to load [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) ([arXiv](https://arxiv.org/abs/2302.13971v1)) models and run inference.
